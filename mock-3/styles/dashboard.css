@@ -1,0 +1,71 @@
+.heading {
+    text-align: center;
+    display: flex;
+    margin: auto;
+    width: 30%;
+    justify-content: space-around;
+}
+
+.main__Heading {
+    text-align: center;
+}
+
+.heading>a {
+    text-decoration: none;
+    color: teal;
+}
+
+.dashboard__table {
+    width: 80%;
+    margin: auto;
+    margin-top: 80px;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+table th {
+    font-size: large;
+}
+
+table td,
+table th {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+}
+
+table tr:hover {
+    background-color: #ddd;
+}
+
+table th {
+    padding: 12px 0;
+    text-align: left;
+    background-color: teal;
+    color: white;
+    text-align: center;
+}
+
+tbody>tr {
+    text-align: center;
+}
+
+tbody>tr>td {
+    cursor: pointer;
+}
+
+.dashboard__filter {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    margin-top: 70px;
+    justify-content: space-evenly;
+}
+
+.filter>select {
+    padding: 10px;
+}
+
+.sort>select {
+    padding: 10px;
+}

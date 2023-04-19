@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/dashboard.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="heading">
+      <a href="./index.html"><h1>Order Page</h1></a
+      ><a href="./dashboard.html"><h1>Dashboard Page</h1></a>
+    </div>
+
+    <h1 class="main__Heading">Dashboard Page</h1>
+    <div class="dashboard__filter">
+      <div class="filter">
+        <select class="filter__type">
+         <option value="">--Filter by Type--</option>
+          <option value="Americano">Americano</option>
+          <option value="Cappuccino">Cappuccino</option>
+          <option value="Expresso">Expresso</option>
+        </select>
+
+        <select class="filter__size">
+            <option value="">--Filter by Size--</option>
+             <option value="small">small</option>
+             <option value="medium">medium</option>
+             <option value="large">large</option>
+           </select>
+      </div>
+
+      <div class="sort">
+        <select class="filter__price">
+            <option value="">--Sort by Price--</option>
+             <option value="asc">ASC</option>
+             <option value="desc">DSC</option>   
+           </select>
+      </div>
+    </div>
+    <table class="dashboard__table">
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Type</th>
+          <th>Size</th>
+          <th>Quantity</th>
+          <th>Total</th>
+          <th>Edit</th>
+          <th>Delete</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+  </body>
+</html>
+
+<script src="./scripts/dashboard.js"></script>

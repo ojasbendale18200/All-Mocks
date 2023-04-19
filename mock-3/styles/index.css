@@ -1,0 +1,54 @@
+.heading {
+    text-align: center;
+    text-decoration: none;
+    display: flex;
+    margin: auto;
+    width: 30%;
+    justify-content: space-around;
+}
+
+.main__Heading {
+    text-align: center;
+}
+
+.heading>a {
+    text-decoration: none;
+    color: teal;
+}
+
+.orders {
+    width: 30%;
+
+    margin: auto;
+    margin-top: 60px;
+}
+
+#order-form {
+    display: flex;
+
+    flex-direction: column;
+    padding: 30px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+#order-form>label {
+    margin-bottom: 5px;
+    font-weight: bold;
+    font-size: large;
+}
+
+#order-form>input {
+    padding: 7px 0;
+    margin-bottom: 10px;
+}
+
+#order-form>select {
+    padding: 7px 0;
+    margin-bottom: 10px;
+}
+
+#order-form>button {
+    padding: 10px;
+    background-color: teal;
+    color: white;
+}

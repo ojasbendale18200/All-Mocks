@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/index.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- Pages -->
+    <div class="heading">
+      <a href="./index.html"><h1>Order Page</h1></a
+      ><a href="./dashboard.html"><h1>Dashboard Page</h1></a>
+    </div>
+
+    <h1 class="main__Heading">Orders Page</h1>
+
+    <!-- Order Form -->
+    <div class="orders">
+      <form id="order-form">
+        <label for="customer-name">Customer Name:</label>
+        <input type="text" id="customer__name" required />
+        <label for="">Coffee Type:</label>
+        <select id="coffee__type" required>
+          <option value="">Select Coffee</option>
+          <option value="Americano">Americano</option>
+          <option value="Expresso">Expresso</option>
+          <option value="Cappuccino">Cappuccino</option>
+        </select>
+        <label for="">Coffee Size:</label>
+        <select id="coffee__size" required>
+          <option value="">Select Size</option>
+          <option value="small">small</option>
+          <option value="medium">medium</option>
+          <option value="large">large</option>
+        </select>
+        <label for="">quantity</label>
+        <input
+          oninput="calculateTotalPrice()"
+          type="number"
+          id="quantity"
+          min="1"
+          required
+        />
+
+        <label for="">Total Price</label>
+        <input type="text" id="total__price" disabled />
+
+        <button type="submit">Order</button>
+      </form>
+    </div>
+  </body>
+</html>
+
+<script src="./scripts/index.js"></script>
